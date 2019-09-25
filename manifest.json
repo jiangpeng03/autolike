@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "币乎点赞",
+    "description": "币乎自动点赞，自动评论插件",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "自动开始点赞"
+    },
+    "icons": {
+        "128": "icon.png"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://bihu.com/shortcontents",
+                "*://bihu.com/people/*",
+                "*://bihu.com/article/*"
+            ],
+            "js": [
+                "content.js",
+                "js/jquery.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
