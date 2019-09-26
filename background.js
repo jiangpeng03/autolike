@@ -1,15 +1,4 @@
 // 用定时任务打开作者的主页
-// 事先定义需要打开的作者列表，主要包含作者的主页Id和文章更新时间（时和分）
-var authorList =
-  [
-    { "authorId": "21303", "authorUpdateTime": "0550", "isLike": "0", "likeDate": "20090820" },
-    { "authorId": "22918", "authorUpdateTime": "0708", "isLike": "0", "likeDate": "20090820" },
-    { "authorId": "20007", "authorUpdateTime": "1035", "isLike": "0", "likeDate": "20090820" },
-    { "authorId": "356267", "authorUpdateTime": "1900", "isLike": "0", "likeDate": "20090820" },
-    { "authorId": "298113", "authorUpdateTime": "2050", "isLike": "0", "likeDate": "20090820" },
-    { "authorId": "31102", "authorUpdateTime": "2111", "isLike": "0", "likeDate": "20090820" },
-    { "authorId": "42268", "authorUpdateTime": "2232", "isLike": "0", "likeDate": "20090820" }
-  ];
 
 // 作者首页的前缀链接
 var authorHostUrl = "https://bihu.com/people/";

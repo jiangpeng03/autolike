@@ -3,7 +3,7 @@ function findNewArticle() {
         try {
             var head_li = document.getElementsByClassName("alt-list").item(0).getElementsByTagName("li").item(0);
             var d_p = head_li.getElementsByClassName("item-top").item(0).getElementsByClassName("user-info").item(0).getElementsByTagName("p").item(1);
-            if (d_p.innerText.indexOf("昨天") == -1) {
+            if (d_p.innerText.indexOf("昨天") == -1 && d_p.innerText.indexOf("小时") == -1) {
                 var content_a = head_li.getElementsByClassName("item-center").item(0).getElementsByClassName("content-info").item(0).getElementsByTagName("a").item(0);
                 content_a.click()
             } else {

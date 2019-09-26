@@ -18,6 +18,7 @@
     },
     "background": {
         "scripts": [
+            "author.js",
             "background.js"
         ],
         "persistent": false
